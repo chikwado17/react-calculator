@@ -1,0 +1,33 @@
+{
+  "name": "calculator-app",
+  "version": "1.10.1",
+  "description": "calculator app",
+  "main": "index.js",
+  "author": "chikwado okoye",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
+  },
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "bootstrap": "4.1.1",
+    "css-loader": "0.28.4",
+    "react-dom": "16.0.1",
+    "react-modal": "^3.6.1",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.18.2",
+    "webpack": "3.1.0"
+  }
+  
+}
